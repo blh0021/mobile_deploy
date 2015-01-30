@@ -1,4 +1,4 @@
-class AndroidMobileDeploy
+class AndroidDeploy
 
   def initialize
     init = `which adb`
