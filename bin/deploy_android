@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'AndroidDeploy'
+
+n = AndroidDeploy.new
+if (ARGV.size < 1)
+  puts "Try deploy_android yourfilename.apk"
+else
+  n.install_pkg_all_devices(ARGV[0])
+end

@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'IOSDeploy'
+
+n = IOSDeploy.new
+if (ARGV.size < 1)
+  puts "Try deploy_ios yourfilename.app"
+else
+  n.install_to_all_devices(ARGV[0])
+end
