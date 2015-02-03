@@ -14,12 +14,13 @@ You will need ios-deploy in order to run the IOS section.
 npm -g install ios-deploy
 ```
 
-##App Files
-
-Currently mobile deploy will only work on .app files.  
-
 ##Run
 
 ```bash
 deploy_ios /path/to/yourfilename.app
 ```
+
+##Troubleshooting
+####AMDeviceInstallApplication failed: 0xE8008016: Unknown error.
+The entitlements specified in your application’s Code Signing Entitlements file do not match those specified in your provisioning profile.
+
